@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type = "text/javascript" src = "formChecker.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h3><b>Welcome to Jacob's money store<b></h3><br>
+    <h8>i promise this isnt money laundering lol </h8><br>
+    <h5 id = "ErrorMsg"></h5><br>
+    <form id ="orderForm" action = "customerBackend.php" onsubmit="return validateForm()" method="post">
+        <h5>QUANTITIES</h5><br>
+        <h8>1 Dollar Bill  - $0.50</h6>
+          <br />Quantity: <input type = "text" name ="1usd" id = "1usd"><br>
+        <h8>5 Dollar Bill  - $2.99</h6>
+          <br />Quantity: <input type = "text" name ="5usd" id = "5usd"><br>
+        <h8>10 Dollar Bill - $2.98</h6>
+          <br />Quantity: <input type = "text" name ="10usd" id = "10usd"><br>
+        <h5>SHIPPING</h5>
+          <input type = "radio" name="shipping" value = "0">7-day Shipping (FREE)<br>
+          <input type = "radio" name="shipping" value = "50">Overnight Shipping ($50)<br>
+          <input type = "radio" name="shipping" value = "5">3-day Shipping ($5)<br>
+        <h5>USER DETAILS</h5>
+          Username:<input type = "text" name = "user" id = "username"><br>
+          Password:<input type = "text" name = "pwd" id = "password"><br>
+        <input type ="reset"><br>
+        <input type = "submit" value = "Purchase!"><br>
+    </form>
+
+  </body>
+
+
+
+</html>
